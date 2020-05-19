@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:11
 MAINTAINER https://github.com/cleancopy
 
 # launch container and listen on port 80 using docker run -p 80:8080 cleancopy/cyberchef:latest
