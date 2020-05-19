@@ -1,6 +1,8 @@
 FROM node:latest
 MAINTAINER https://github.com/cleancopy
 
+# launch container and listen on port 80 using docker run -p 80:8080 cleancopy/cyberchef:latest
+
 RUN apt-get update && \
   apt-get install -y git && \
   rm -rf /var/lib/apt/lists/* && \
@@ -9,6 +11,7 @@ RUN apt-get update && \
   cd CyberChef && \
   npm install
 
+EXPOSE 8080
 WORKDIR /CyberChef
 ENTRYPOINT ["grunt"]
 CMD ["dev"]
