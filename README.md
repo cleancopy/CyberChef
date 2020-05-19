@@ -1,4 +1,20 @@
-# CyberChef
+# CyberChef-Docker
+
+#### *A clean, minimal, updated docker container for CyberChef*
+
+## How to use
+
+Download and/or update the container with 
+
+`docker pull cleancopy/cyberchef:latest`
+
+one-liner to bring up the container and listen on port 80 is
+
+`docker run -d -p 80:8080 cleancopy/cyberchef:latest`
+
+new images are automatically generated when CyberChef's source is updated at https://github.com/gchq/CyberChef so the 'latest' tagged image should always be the most recent version
+
+# About CyberChef
 
 [![Build Status](https://travis-ci.org/gchq/CyberChef.svg?branch=master)](https://travis-ci.org/gchq/CyberChef)
 [![dependencies Status](https://david-dm.org/gchq/CyberChef/status.svg)](https://david-dm.org/gchq/CyberChef)
